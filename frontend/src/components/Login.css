@@ -1,0 +1,84 @@
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3498db, #2ecc71); /* Blue to Green gradient */
+    padding: 20px;
+  }
+  
+  /* Card Styling */
+  .login-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .login-card h2 {
+    color: #3498db; /* Blue */
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Error Message */
+  .login-card .error {
+    color: #e74c3c; /* Red */
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  /* Form Inputs */
+  .login-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .login-card input:focus {
+    border-color: #3498db; /* Blue */
+    outline: none;
+  }
+  
+  /* Login Button */
+  .login-card button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #2ecc71; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-card button:hover {
+    background-color: #27ae60; /* Darker Green */
+  }
+  
+  /* Signup Link */
+  .login-card p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .login-card a {
+    color: #3498db; /* Blue */
+    text-decoration: none;
+  }
+  
+  .login-card a:hover {
+    text-decoration: underline;
+  }

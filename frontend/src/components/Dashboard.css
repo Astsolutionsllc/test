@@ -1,0 +1,158 @@
+/* Dashboard Container */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* 3 parts for main content, 1 part for ads */
+  grid-template-rows: auto 1fr; /* Header row and content row */
+  gap: 20px; /* Space between sections */
+  min-height: 100vh;
+  background-color: #f4f4f4; /* Light Gray */
+  padding: 20px;
+}
+
+/* Header */
+.dashboard-header {
+  grid-column: 1 / -1; /* Span across all columns */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+  color: #3498db; /* Blue */
+  margin: 0;
+}
+
+.dashboard-header button {
+  background-color: #e74c3c; /* Red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dashboard-header button:hover {
+  background-color: #c0392b; /* Darker Red */
+}
+
+/* Main Content (Left Side) */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between sections */
+}
+
+/* Ad Section (Right Side) */
+.ad-section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Quick Stats Section */
+.quick-stats {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quick-stats h2 {
+  color: #3498db; /* Blue */
+  margin-bottom: 10px;
+}
+
+.quick-stats p {
+  margin: 5px 0;
+  color: #333333; /* Dark Gray */
+}
+
+/* Subscription Upsell Section */
+.subscription-upsell {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-upsell h2 {
+  color: #3498db; /* Blue */
+  margin-bottom: 10px;
+}
+
+.subscription-upsell p {
+  margin: 5px 0;
+  color: #333333; /* Dark Gray */
+}
+
+.subscription-upsell button {
+  background-color: #2ecc71; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.subscription-upsell button:hover {
+  background-color: #27ae60; /* Darker Green */
+}
+
+/* License List Section */
+.license-list {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.license-list h2 {
+  color: #3498db; /* Blue */
+  margin-bottom: 10px;
+}
+
+.license-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.license-list li {
+  background: #f9f9f9; /* Light Gray */
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.license-list li p {
+  margin: 5px 0;
+  color: #333333; /* Dark Gray */
+}
+
+.license-list a {
+  color: #3498db; /* Blue */
+  text-decoration: none;
+}
+
+.license-list a:hover {
+  text-decoration: underline;
+}
+
+/* Ad Banner Section */
+.ad-section h2 {
+  color: #3498db; /* Blue */
+  margin-bottom: 10px;
+}
+
+.ad-section a {
+  color: #e74c3c; /* Red */
+  text-decoration: none;
+}
+
+.ad-section a:hover {
+  text-decoration: underline;
+}
