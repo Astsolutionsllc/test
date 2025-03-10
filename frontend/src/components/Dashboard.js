@@ -20,7 +20,7 @@ const Dashboard = () => {
           return;
         }
 
-        const response = await axios.get('http://localhost:5000/api/licenses', {
+        const response = await axios.get('http://44.208.28.102:5000/api/licenses', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setLicenses(response.data); // Set all licenses, filter active later
