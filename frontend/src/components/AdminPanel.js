@@ -10,7 +10,7 @@ const AdminPanel = () => {
   const fetchLicenses = async () => {
     try {
       const token = localStorage.getItem('token');
-      const res = await axios.get('http://localhost:5000/api/admin/licenses', {
+      const res = await axios.get('http://44.208.28.102:5000/api/admin/licenses', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setLicenses(res.data);
@@ -23,7 +23,7 @@ const AdminPanel = () => {
   const fetchUsers = async () => {
     try {
       const token = localStorage.getItem('token');
-      const res = await axios.get('http://localhost:5000/api/admin/users', {
+      const res = await axios.get('http://44.208.28.102:5000/api/admin/users', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setUsers(res.data);
@@ -37,7 +37,7 @@ const AdminPanel = () => {
     try {
       const token = localStorage.getItem('token');
       await axios.post(
-        `http://localhost:5000/api/admin/approve-renewal/${id}`,
+        `http://44.208.28.102:5000/api/admin/approve-renewal/${id}`,
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );
