@@ -14,7 +14,7 @@ const Signup = () => {
     e.preventDefault();
     setError(''); // Clear previous errors
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/signup', {
+      const response = await axios.post('http://44.208.28.102:5000/api/auth/signup', {
         email,
         password,
         business_name: businessName,
